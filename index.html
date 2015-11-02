@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Javascript Demo</title>
+	<meta name="author" content="Kelly">
 	<style>
 		body {
 			background-color:black;
@@ -25,11 +26,10 @@
 
 	<script>
 
-		var words = ["fun", "exciting", "about not giving up", "being helpful", "being open", "what I learned at CodingDojo!"],
+		var words = ["fun ", "exciting ", "about\u00A0not\u00A0giving\u00A0up ", "being\u00A0helpful ", "being\u00A0open ", "what\u00A0I\u00A0learned\u00A0at\u00A0CodingDojo! "],
 			el = document.getElementById('magic'),
 			word_counter = 0,
 			character_counter = 0;
-
 		function updateText()
 		{
 			el.innerHTML = el.innerHTML+words[word_counter][character_counter++];
@@ -46,7 +46,7 @@
 			}
 		}
 
-		setInterval(updateText,300);
+		setInterval(updateText,500);
 
 	</script>
 
